@@ -15,4 +15,6 @@
   df = !git diff | less
 
 [diff]
-    color = true
+  color = true
+[core]
+  excludesFile = /Users/okamu/.gitignore_global

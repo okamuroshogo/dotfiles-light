@@ -14,6 +14,7 @@ echo "ok. run brew upgrade..."
 brew upgrade --all
 
 formulas=(
+    ag
     arp-scan
     go
     jq

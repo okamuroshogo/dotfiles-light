@@ -16,6 +16,7 @@ brew upgrade --all
 formulas=(
     ag
     arp-scan
+    carthage
     go
     jq
     makedepend
@@ -54,6 +55,9 @@ casks=(
     adobe-creative-cloud
     aerial
     android-file-transfer
+    android-platform-tools
+    android-ndk
+    android-sdk
     android-studio
     appcleaner
     atom
@@ -65,7 +69,9 @@ casks=(
     imageoptim
     iterm2
     java
+    genymotion
     karabiner
+    minikube
     mongohub
     mysqlworkbench
     sequel-pro

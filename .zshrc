@@ -210,3 +210,4 @@ if ! is_screen_or_tmux_running && shell_has_started_interactively; then
   done
 fi
 source ~/.zsh/zsh-behind-window-notify/behind-window-notify.zsh
+source ~/.zshenv

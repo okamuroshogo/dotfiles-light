@@ -8,3 +8,6 @@ if [ -d $HOME/.anyenv ] ; then
   done
 fi
 export XDG_CONFIG_HOME="$HOME/.config"
+export PATH="$HOME/.xcenv/bin:$PATH"
+eval "$(xcenv init -)"
+

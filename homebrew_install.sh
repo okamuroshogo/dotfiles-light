@@ -16,7 +16,9 @@ brew upgrade --all
 formulas=(
     ag
     arp-scan
+    awscli
     carthage
+    Caskroom/cask/xquartz
     go
     jq
     makedepend

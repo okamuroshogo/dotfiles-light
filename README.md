@@ -15,6 +15,12 @@ homesick symlink dotfiles
 ### Install Homebrew
 ```
 cd ~/.homesick/repos/dotfiles/
-./.brew
+./.brew_install
+```
+
+### Install anyenv environment
+```
+cd ~/.homesick/repos/dotfiles/
+./.anyenv_install
 ```
 

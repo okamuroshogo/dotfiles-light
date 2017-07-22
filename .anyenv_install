@@ -11,11 +11,9 @@ anyenv install pyenv --skip-existing
 anyenv install rbenv --skip-existing
 
 cat << END
-
 **************************************************
 ANYENV INSTALLED!
 Please reload your profile (exec $SHELL -l) or open a new session.
 bye.
 **************************************************
-
 END

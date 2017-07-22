@@ -3,10 +3,8 @@
 echo "installing anyenv environments"
 
 anyenv install goenv --skip-existing
-anyenv install jenv --skip-existing
 anyenv install ndenv --skip-existing
 anyenv install nenv --skip-existing
-anyenv install nodenv --skip-existing
 anyenv install pyenv --skip-existing
 anyenv install rbenv --skip-existing
 

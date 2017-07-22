@@ -29,3 +29,9 @@ cd ~/.homesick/repos/dotfiles/
 cd ~/.homesick/repos/dotfiles/
 ./.osx
 ```
+
+### Install latest env
+```
+cd ~/.homesick/repos/dotfiles/
+./.latest_env_install
+```

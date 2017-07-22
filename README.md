@@ -24,3 +24,8 @@ cd ~/.homesick/repos/dotfiles/
 ./.anyenv_install
 ```
 
+### Setup osx
+```
+cd ~/.homesick/repos/dotfiles/
+./.osx
+```

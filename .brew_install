@@ -23,6 +23,7 @@ formulas=(
     jq
     makedepend
     mongodb
+    mysql
     nginx
     nkf
     nmap

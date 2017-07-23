@@ -38,6 +38,7 @@ formulas=(
     scons
     sqlite
     tmux
+    wget
     zsh
 )
 

@@ -71,7 +71,6 @@ zplug load --verbose > /dev/null
 # vim
 alias vim='nvim'
 export XDG_CONFIG_HOME=~/.config
-colorscheme lucario
 
 fpath=(/usr/local/share/zsh-completions $fpath)
  

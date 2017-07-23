@@ -12,7 +12,7 @@ build = 'make'
 repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
-repo = ''
+repo = 'raphamorim/lucario'
 
 [[plugins]]
 repo = 'Shougo/vimshell'

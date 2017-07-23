@@ -27,8 +27,18 @@ zplug "b4b4r07/dotfiles"
 
 zplug "modules/osx", from:prezto
 zplug "modules/prompt", from:prezto
-#zstyle ':prezto:module:prompt' theme 'powerline'
-
+zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+zstyle ':prezto:module:prompt' theme 'powerline'
+POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="gray"
+POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="green"
+POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND="red"
+POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND="blue"
+POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="021"
+POWERLEVEL9K_DIR_HOME_BACKGROUND="021"
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="021"
 
 zstyle ':prezto:load' pmodule \
   'environment' \
@@ -44,12 +54,6 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'tmux'
 
-
-#zstyle ':prezto:module:tmux:auto-start' remote 'yes'
-zstyle ':prezto:module:tmux:auto-start' local 'yes'
-
-
-
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -60,5 +64,6 @@ fi
 
 zplug load --verbose > /dev/null
 # }}}
-export LC_CTYPE=C
-export LANG=C
+
+# zsh起動時にtmux起動
+[[ -z "$TMUX" && ! -z "$PS1" ]] && exec tmux

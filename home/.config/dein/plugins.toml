@@ -34,3 +34,7 @@ repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'Shougo/neocomplcache.vim'
+

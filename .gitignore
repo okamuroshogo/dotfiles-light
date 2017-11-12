@@ -1,3 +1,5 @@
 .DS_Store
 .ssh
 home/.config/dein/dein
+node_modules/
+

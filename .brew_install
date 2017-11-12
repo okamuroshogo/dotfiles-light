@@ -39,6 +39,7 @@ formulas=(
     sqlite
     tmux
     wget
+    yarn
     zsh
 )
 

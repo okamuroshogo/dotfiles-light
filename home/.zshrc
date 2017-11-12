@@ -164,6 +164,9 @@ unsetopt auto_menu
 # cd -[tab]で過去のディレクトリにひとっ飛びできるようにする
 setopt auto_pushd
 
+#大文字、小文字を区別せず補完する
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
 # -------------------------------------
 # パス
 # -------------------------------------
@@ -198,7 +201,25 @@ alias grep="grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude
 alias ls="ls -G" # color for darwin
 alias l="ls -la"
 alias la="ls -la"
-alias l1="ls -1"
+alias ll="ls -1"
+
+export LSCOLORS=gxfxcxdxbxegedabagacag
+export LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;46'
+
+# 補完候補もLS_COLORSに合わせて色が付くようにする
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
+# lsがカラー表示になるようエイリアスを設定
+case "${OSTYPE}" in
+darwin*)
+  # Mac
+  alias ls="ls -GF"
+  ;;
+linux*)
+  # Linux
+  alias ls='ls -F --color'
+  ;;
+esac
 
 # tree
 alias tree="tree -NC" # N: 文字化け対策, C:色をつける
@@ -269,3 +290,18 @@ if ! is_screen_or_tmux_running && shell_has_started_interactively; then
     fi
   done
 fi
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+
+export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH="/usr/local/Cellar/git/2.14.1/bin:$PATH"
+
+
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/okamu/.homesick/repos/dotfiles/home/.anyenv/envs/ndenv/versions/v8.2.1/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/okamu/.homesick/repos/dotfiles/home/.anyenv/envs/ndenv/versions/v8.2.1/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/okamu/.homesick/repos/dotfiles/home/.anyenv/envs/ndenv/versions/v8.2.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/okamu/.homesick/repos/dotfiles/home/.anyenv/envs/ndenv/versions/v8.2.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+export PATH="$HOME/.yarn/bin:$PATH"

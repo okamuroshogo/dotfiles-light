@@ -20,9 +20,11 @@ formulas=(
     carthage
     Caskroom/cask/xquartz
     go
+    imagemagick
     jq
     makedepend
     mongodb
+    mysql
     nginx
     nkf
     nmap

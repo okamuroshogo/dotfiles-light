@@ -52,11 +52,11 @@ set smarttab "新しい行を作った時に高度な自動インデント
 "set clipboard=unnamed,autoselect "OSのクリッポボードと連携
 set matchpairs& matchpairs+=<:> "対応カッコに＜＞を追加
 set backspace=eol,indent,start
-
 set tabstop=2
-set autoindent
-set expandtab
 set shiftwidth=2
+set softtabstop=2
+
+set autoindent
 
 set wildmenu " コマンドモードの補完
 set history=5000 " 保存するコマンド履歴の数

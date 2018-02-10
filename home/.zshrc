@@ -305,3 +305,4 @@ export PATH="/usr/local/Cellar/git/2.14.1/bin:$PATH"
 [[ -f /Users/okamu/.homesick/repos/dotfiles/home/.anyenv/envs/ndenv/versions/v8.2.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/okamu/.homesick/repos/dotfiles/home/.anyenv/envs/ndenv/versions/v8.2.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
 
 export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$PATH:`yarn global bin`"

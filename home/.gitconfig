@@ -12,9 +12,14 @@
   stt = status -uno
   difff = diff --word-diff
   co = checkout
-  df = !git diff | less -R
+  df = !git diff --color-words | less -RS
 
 [diff]
   color = true
 [core]
   excludesFile = /Users/okamu/.gitignore_global
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

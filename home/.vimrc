@@ -180,3 +180,9 @@ let g:neocomplcache_force_omni_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplcache_force_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
 "=============== neocomplcache ===================
+
+" 大文字 W で保存
+command W w
+" Q で quickrun 実行しないように
+command Q q
+

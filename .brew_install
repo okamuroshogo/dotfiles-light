@@ -16,41 +16,59 @@ brew upgrade --all
 formulas=(
     ag
     arp-scan
+    asciiquarium
+    autoconf
+    automake
+    aws-elasticbeanstalk
     awscli
+    bitrise
+    boost
     carthage
-    Caskroom/cask/xquartz
+    circleci
+    cmake
+    cowsay
+    fabric
+    ffmpeg
+    fontconfig
+    git
+    git-lfs
     go
     imagemagick
+    jmeter
     jq
+    kakasi
+    kubernetes-cli
+    lame
+    libxml2
+    libxslt
+    libiconv
     makedepend
     mongodb
     mysql
+    neovim
     nginx
     nkf
     nmap
-    neovim/neovim/neovim
     oniguruma
     openssl
     openssl@1.1
     pcre
     pkg-config
-    python3
     readline
     redis
     scons
+    sl
     sqlite
+    swiftlint
+    tig
     tmux
     wget
     yarn
+    zlib
     zsh
 )
 
-"brew tap..."
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/homebrew-php
-brew tap homebrew/apache
-brew tap sanemat/font
+brew tap homebrew/cask-versions
 
 echo "start brew install apps..."
 for formula in "${formulas[@]}"; do
@@ -60,13 +78,9 @@ done
 casks=(
     adobe-creative-cloud
     aerial
-    android-file-transfer
-    android-platform-tools
-    android-ndk
-    android-sdk
-    android-studio
+    airmail-beta
     appcleaner
-    atom
+    charles
     cyberduck
     docker
     firefox
@@ -75,20 +89,15 @@ casks=(
     imageoptim
     iterm2
     java
-    genymotion
     karabiner
-    minikube
-    mongohub
     mysqlworkbench
     sequel-pro
-    sketch
-    sketch-toolbox
+    shiftit
     skype
     slack
+    station
     sublime-text
-    thunderbird
-    unity
-    vagrant
+    vlc
 )
 
 echo "start brew cask install apps..."

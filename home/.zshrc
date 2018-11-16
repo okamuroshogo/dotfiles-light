@@ -306,3 +306,4 @@ export PATH="/usr/local/Cellar/git/2.14.1/bin:$PATH"
 
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$PATH:`yarn global bin`"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"

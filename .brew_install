@@ -90,6 +90,7 @@ casks=(
     iterm2
     java
     karabiner
+    messenger
     mysqlworkbench
     sequel-pro
     shiftit

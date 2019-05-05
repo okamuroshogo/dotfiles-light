@@ -11,29 +11,29 @@ gem install homesick
 homesick clone okamuroshogo/dotfiles-light
 
 # Link dotfiles
-homesick symlink dotfiles
+homesick symlink dotfiles-light
 ```
 
 ### Install Homebrew
 ```
-cd ~/.homesick/repos/dotfiles/
+cd ~/.homesick/repos/dotfiles-light/
 ./.brew_install
 ```
 
 ### Install anyenv environment
 ```
-cd ~/.homesick/repos/dotfiles/
+cd ~/.homesick/repos/dotfiles-light/
 ./.anyenv_install
 ```
 
 ### Setup osx
 ```
-cd ~/.homesick/repos/dotfiles/
+cd ~/.homesick/repos/dotfiles-light/
 ./.osx
 ```
 
 ### Install latest env
 ```
-cd ~/.homesick/repos/dotfiles/
+cd ~/.homesick/repos/dotfiles-light/
 ./.latest_env_install
 ```

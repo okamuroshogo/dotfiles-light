@@ -1,1 +1,1 @@
-/Users/okamu13/.homesick/repos/dotfiles/home/.vim
+/Users/mini-okamu/.homesick/repos/dotfiles-light/home/.vim

@@ -6,8 +6,9 @@ goenv global $(goenv install --list | grep -v - | head -2 | tail -1)
 nodenv install $(nodenv install -l | grep -v - | tail -1) -s
 nodenv global $(nodenv install -l | grep -v - | tail -1)
 
-CFLAGS="-I$(brew --prefix openssl)/include" \
-LDFLAGS="-L$(brew --prefix openssl)/lib" \
+CFLAGS="-I$(brew --prefix readline)/include -I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include" \
+LDFLAGS="-L$(brew --prefix readline)/lib -L$(brew --prefix openssl)/lib" \
+PYTHON_CONFIGURE_OPTS=--enable-unicode=ucs2 \
 pyenv install $(pyenv install -l | grep -v - | tail -1) -s
 pyenv global $(pyenv install -l | grep -v - | tail -1)
 

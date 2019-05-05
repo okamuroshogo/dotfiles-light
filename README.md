@@ -38,3 +38,8 @@ cd ~/.homesick/repos/dotfiles-light/
 cd ~/.homesick/repos/dotfiles-light/
 ./.brew_install
 ```
+
+### etc
+```
+chsh -s /bin/zsh
+```

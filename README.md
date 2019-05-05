@@ -38,3 +38,10 @@ cd ~/.homesick/repos/dotfiles-light/
 cd ~/.homesick/repos/dotfiles-light/
 ./.brew_install
 ```
+
+### etc
+```
+chsh -s /bin/zsh
+ln -nfs ~/.homesick/repos/dotfiles-light/home/.vim .vim
+ln -nfs ~/.homesick/repos/dotfiles-light/home/.vimrc init.vim
+```
